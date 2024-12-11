@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Emoji Dagplanner</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="clouds"></div>
+
+<header>
+  <h1>Emoji Dagplanner</h1>
+  <div class="time-display" aria-label="Current time"></div>
+</header>
+
+<section class="day-sections">
+  <div class="section-block">
+    <h2>Morning</h2>
+    <div class="placeholder-row">
+      <div class="placeholder empty" aria-label="Empty placeholder" tabindex="0"></div>
+      <button class="add-btn" aria-label="Add placeholder">+</button>
+    </div>
+  </div>
+  <div class="section-block">
+    <h2>Midday</h2>
+    <div class="placeholder-row">
+      <div class="placeholder empty" aria-label="Empty placeholder" tabindex="0"></div>
+      <button class="add-btn" aria-label="Add placeholder">+</button>
+    </div>
+  </div>
+  <div class="section-block">
+    <h2>Evening</h2>
+    <div class="placeholder-row">
+      <div class="placeholder empty" aria-label="Empty placeholder" tabindex="0"></div>
+      <button class="add-btn" aria-label="Add placeholder">+</button>
+    </div>
+  </div>
+</section>
+
+<button class="homework-btn" aria-label="Homework toggle">Homework</button>
+
+<div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search emojis..." aria-label="Search emojis"/>
+</div>
+
+<nav class="category-nav" aria-label="Emoji categories">
+  <button class="cat-btn" data-category="all">All</button>
+  <button class="cat-btn" data-category="food">Food</button>
+  <button class="cat-btn" data-category="art">Art</button>
+  <button class="cat-btn" data-category="tech">Tech</button>
+  <button class="cat-btn" data-category="travel">Travel</button>
+  <button class="cat-btn" data-category="objects">Objects</button>
+</nav>
+
+<main aria-label="Emoji deck">
+  <div class="emoji-deck"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
